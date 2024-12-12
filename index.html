@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <div class="setting-container">
+        <h1>System Settings</h1>
+
+        <div class="setting-items">
+            <label for="wifi">Wifi</label>
+            <input type="checkbox" id="wifi" checked>
+        </div>
+        <div class="setting-items">
+            <label for="sound">Sound</label>
+            <input type="range" id="sound" min="0" max="100" value="50">
+        </div>
+        <div class="setting-items">
+            <label for="notifications">Notifications</label>
+            <select id="notifications">
+            <option value="all">All</option>
+            <option value="important">important only</option>
+            <option value="none">None</option>
+        </select>
+        </div>
+        <div class="setting-items">
+            <label for="theme">Theme</label>
+            <button id="theme-toggle">Dark Mode</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
